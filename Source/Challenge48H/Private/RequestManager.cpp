@@ -20,7 +20,7 @@ void RequestManager::Scorelist()
     TSharedRef<IHttpRequest, ESPMode::ThreadSafe> HttpRequest = FHttpModule::Get().CreateRequest();
     HttpRequest->SetVerb("GET");
     HttpRequest->SetURL(url);
-    HttpRequest->OnProcessRequestComplete().BindRaw(this, &RequestManager::OnNewScoreReceived);
+    HttpRequest->OnProcessRequestComplete().BindRaw(this, &RequestManager::OnScoreListReceived);
     HttpRequest->ProcessRequest();
 
 }
