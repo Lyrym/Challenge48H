@@ -19,12 +19,12 @@ void URequestManager::Scorelist(FOnScoreListSignature callback)
             if (bSuccess)
             {
                 FString ResponseString = Response->GetContentAsString();
-                UE_LOG(LogTemp, Warning, TEXT("New score response: %s"), *ResponseString);
+                UE_LOG(LogTemp, Warning, TEXT("New scorelist response: %s"), *ResponseString);
                 callback.ExecuteIfBound(ResponseString);
             }
             else
             {
-                UE_LOG(LogTemp, Warning, TEXT("Failed to update or insert player's score."));
+                UE_LOG(LogTemp, Warning, TEXT("Failed to get scorelist"));
                 callback.ExecuteIfBound("");
             }
         });
@@ -58,4 +58,38 @@ void URequestManager::NewScore(FString name, int32 score, FOnNewScore callback)
             }
         });
     HttpRequest->ProcessRequest();
+}
+
+FString URequestManager::ParseScores(FString toparse) {
+
+    FString formatedString = TEXT("{values:"+toparse+"}");
+    TSharedPtr<FJsonObject> resJsonObject;
+    
+    FString ScoresTab;
+
+    // Array of json objects at top level of json
+    TArray<TSharedPtr<FJsonValue>> JsonArray;
+
+    TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(toparse);
+    // Deserialize the json data given Reader and the actual object to deserialize
+    if (FJsonSerializer::Deserialize(Reader, JsonArray)) {
+        //Get the value of the json object by field name
+        UE_LOG(LogTemp, Warning, TEXT("===== GET VALUES1 ====="));
+        
+
+        for (TSharedPtr<FJsonValue> entry : JsonArray) {
+            int32 score = entry->AsObject()->GetIntegerField("score");
+            FString name = entry->AsObject()->GetStringField("pseudo");
+            ScoresTab += (name+" : "+FString::FromInt(score)+"\n");
+        }
+        return ScoresTab;
+    }
+
+
+    UE_LOG(LogTemp, Warning, TEXT("===== NO VALUES ====="));
+    return formatedString;
+
+
+    
+
 }
