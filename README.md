@@ -11,13 +11,13 @@ Game made during 2022/2023 year for a game jam at Ynov Bordeaux.
 
 ## Presentation :
 
-You play as a spirit named Gouty whose goal is to cross an ***[probably] enchanted cave***.
+You play as a spirit named Goutie whose goal is to cross an ***[probably] enchanted cave***.
 
 To help her in her quest, she will be able to use different **power orbs**: the ***Fire***, ***Ice*** and ***Poison*** orb. Each of these orbs gives her a specific power to continue progressing through the level.
 
 But be careful, each power **orb brings its counterpart**. Make the best use of the available powers to reach the end of the level as quickly as possible.
 
-**Find the power orbs** to **acquire new skills** and allow Gouty to overcome the obstacles to reach the end of the level.
+**Find the power orbs** to **acquire new skills** and allow Goutie to overcome the obstacles to reach the end of the level.
 
 ## Game keys :
 
@@ -38,29 +38,29 @@ But be careful, each power **orb brings its counterpart**. Make the best use of 
 
 ### Orbs of Fire 🔥:
 
-The orb of fire allows gouty to accelerate. Use this orb to gain speed and pass certain obstacles.
+The orb of fire allows goutie to accelerate. Use this orb to gain speed and pass certain obstacles.
 
 #### **Powers of the orb :**
 
-- Positive : Gives an acceleration to Gouty.
-- Negative : Gouty can't stop while this power is active.
+- Positive : Gives an acceleration to Goutie.
+- Negative : Goutie can't stop while this power is active.
 
 ### Orbs of Ice 🧊:
 
-The Ice Orb allows Gouty not to slide on the ice platforms. Use this orb to climb ice slopes without slipping.
+The Ice Orb allows Goutie not to slide on the ice platforms. Use this orb to climb ice slopes without slipping.
 
 #### **Powers of the orb :**
 
-- Positive: Allows Gouty to not slip on the ice.
-- Negative : Gouty starts to slide on the stone platforms.
+- Positive: Allows Goutie to not slip on the ice.
+- Negative : Goutie starts to slide on the stone platforms.
 
 ### Orbs of Poison 🧪:
 
-The Poison orb allows gouty to have a double jump. Use this orb to jump over obstacles that are normally too high or too far away.
+The Poison orb allows goutie to have a double jump. Use this orb to jump over obstacles that are normally too high or too far away.
 
 #### **Powers of the orb :**
 
-- Positive : Allows Gouty to jump twice.
+- Positive : Allows Goutie to jump twice.
 - Negative : Reverse the commands during the duration of the power.
 
 ## How to open the project:
