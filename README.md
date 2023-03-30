@@ -1,4 +1,4 @@
-# The Probably Enchanted Cavern -- UnrealEngine5 - 2023 : 
+# The Probably Enchanted Cavern -- UnrealEngine5 - 2023: 
 Game made during 2022/2023 year for a game jam at Ynov Bordeaux.
 
 Developer team :
