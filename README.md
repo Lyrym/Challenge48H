@@ -1,5 +1,22 @@
-# Caverne probablement enchantée --UnrealEngine5-2023 : 
+# The Probably Enchanted Cavern -- UnrealEngine5 - 2023 : 
 Game made during 2022/2023 year for a game jam at Ynov Bordeaux.
+
+Developer team :
+
+- [Léo Séry](https://github.com/LeoSery)
+- [Lucas Milh](https://github.com/Okaeri-nasaii)
+- [Titouan Mathis](https://github.com/Lyrym)
+
+Artist team :
+
+- [Arthur Fernandez](https://www.artstation.com/arthurfernandez3d1)
+- [Léa Signoret](https://www.artstation.com/leacide)
+- [Mathis Desage](https://www.artstation.com/mathis_desage16)
+- [Andréa Marignale](https://www.artstation.com/arthurfernandez3d1)
+
+![](https://i.imgur.com/v1VrlOS.jpg)
+
+![](https://i.imgur.com/CZqXuBS.jpg)
 
 ## Summary :
 
