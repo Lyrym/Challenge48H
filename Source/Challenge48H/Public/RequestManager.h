@@ -23,10 +23,19 @@ class CHALLENGE48H_API URequestManager : public UBlueprintFunctionLibrary
 
 	DECLARE_DYNAMIC_DELEGATE_OneParam(FOnNewScore, FString, Res);
 
+	DECLARE_DYNAMIC_DELEGATE_OneParam(FOnTokenReceived, FString, Res);
+
+	DECLARE_DYNAMIC_DELEGATE_OneParam(FOnSignInTokenReceived, FString, Res);
+
+
+	UFUNCTION(BlueprintCallable, Category = "APIRequestsBPLibrary")
+		static void SignIn(FString username, FString email, FString password, FOnTokenReceived callback);
+	UFUNCTION(BlueprintCallable, Category = "APIRequestsBPLibrary")
+		static void Login(FString username, FString email, FString password, FOnTokenReceived callback);
 	UFUNCTION(BlueprintCallable, Category = "APIRequestsBPLibrary")
 		static void Scorelist(FOnScoreListSignature callback);
 	UFUNCTION(BlueprintCallable, Category = "APIRequestsBPLibrary")
-		static void NewScore(FString name, int32 score, FOnNewScore callback);
+		static void NewScore(FString token, int32 score, FOnNewScore callback);
 
 	UFUNCTION(BlueprintCallable, Category = "APIRequestsBPLibrary")
 		static FString ParseScores(FString toparse);
